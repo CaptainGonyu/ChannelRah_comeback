@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+/* NAV BAR*/
+img {
+    width: 100%;
+    display: flex;
+    border-radius: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181b;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+  }
+
+  .link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #7b2cbf;
+    transition: all 0.3s ease;
+  }
+
+  .link a:hover::after {
+    width: 70%;
+  }
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #7b2cbf;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: hsla(185, 64%, 51%, 1);
+
+    background: linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#30C5D2", endColorstr="#471069", GradientType=1 );
+}
+/*END nav-bar*/
+
+/*Header*/
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header.container h2 {
+    margin-bottom: 1rem;
+    color: #6930c3;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1 {
+    color: #5390d9;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: #6930c3;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 3rem 2rem;
+}
+
+
+
+  .cool-text{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(45deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 2s infinite alternate;
+    }
+    
+    @keyframes glow {
+        0% { text-shadow: 0 0 10px #fff; }
+        50% { text-shadow: 0 0 20px #00bcd4; }
+        100% { text-shadow: 0 0 10px #fff; }
+    }
+    
+    .cool-text:hover {
+        transform: scale(1.1);
+        color: #ff0000;
+    
+} 
+/*END header*/
+
+/*Sections*/
+
+.container-2 /*music*/{
+    margin: auto;
+    justify-content: center;
+    height: 25vh;
+    display: flex;
+    text-align: right;
+    /* background-color: #7b2cbf; */
+    /* border-radius: 75rem; */
+    align-items: center;
+    font-size: 40px;
+    color: #6930c3;
+    opacity: 1;
+   /*  transition: all 0.4s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(83, 144, 217, 0.5); */
+}
+
+.glowMusic {
+    transition: all 0.4s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 30px rgba(144, 67, 180, 0.5);
+    border-radius: 55rem;
+}
+
+/*Music*/
+.music {
+    text-align: center;
+    font-size: 1.5rem;
+    list-style-type: none;
+    color: #6930c3;
+    /* 
+    display: flex;
+    border: 1px solid whitesmoke;
+    padding: 2rem 1rem;
+    margin: auto;
+    justify-content: space-between; */
+}
+
+#spotify {
+    color: #C9A0DC;
+}
+
+#spotify:hover {
+    color: #6495ED;
+}
+
+/* #spotify:visited {
+    color: #841617;
+} */
+
+#spotify:active {
+    color: #FFC0CB;
+}
+
+
+
+
+/* End container music*/
+
+
+/*Socials*/
+.container-3 /*socials*/ {
+    margin: auto;
+    justify-content: center;
+    height: 25vh;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    font-size: 40px;
+    color: #6930c3;
+}
+
+.glowSocial {
+    transition: all 0.4s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 30px rgba(93, 184, 218, 0.5);
+    border-radius: 55rem;
+    box-sizing: content-box;
+}
+
+/*Socials links*/
+.socials {
+    text-align: center;
+    font-size: 1.5rem;
+    list-style-type: none;
+    color: #6930c3;
+}
+
+#instagram {
+    color: #C9A0DC;
+}
+
+#instagram:hover {
+    color: #6495ED;
+}
+
+/* #instagram:visited {
+    color: #8B8589;
+} */
+
+#instagram:active {
+    color: #FFC0CB;
+}
+
+#twitter {
+    color: #C9A0DC;
+}
+
+#twitter:hover {
+    color: #6495ED;
+}
+
+#twitter:active {
+   color: #ffc0cb;
+}
+
+/* #twitter:visited {
+    color: #8B8589;
+} */
+
+#tiktok {
+    color: #C9A0DC;
+}
+
+#tiktok:hover {
+    color: #6495ED;
+}
+
+#tiktok:active {
+    color: #ffc0cb;
+}
+
+/* #tiktok:visited {
+    color: #8B8589;
+} */
+/*Back to top*/
